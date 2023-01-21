@@ -30,7 +30,7 @@ public class CategoryController {
     @GetMapping("/categories/new")
     public String createCategoryForm(Model model) {
 
-        // create student object to hold category form data
+        // create category object to hold category form data
         Category category = new Category();
         model.addAttribute("category", category);
         return "create_category";
